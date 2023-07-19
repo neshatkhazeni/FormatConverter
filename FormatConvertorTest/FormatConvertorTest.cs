@@ -65,7 +65,7 @@ namespace FormatConvertorTest
         [Test]
         public void Ftp_XmlToJson()
         {
-            //File System Storage Definition
+            //Ftp Storage Definition
             var input = Settings.FtpSettings("SourceFiles/DocumentTest.xml");
             var output = Settings.FtpSettings("TargetFiles/DocumentTest.json");
             IStorage inputStorage = new FtpStorage(input);
@@ -99,7 +99,7 @@ namespace FormatConvertorTest
         [Test]
         public void Ftp_JsonToXml()
         {
-            //File System Storage Definition
+            //Ftp Storage Definition
             var input = Settings.FtpSettings("SourceFiles/DocumentTest.json");
             var output = Settings.FtpSettings("TargetFiles/DocumentTest.xml");
             IStorage inputStorage = new FtpStorage(input);
